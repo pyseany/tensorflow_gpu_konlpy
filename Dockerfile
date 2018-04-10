@@ -11,8 +11,5 @@ RUN apt-get -y install curl
 
 RUN pip install pip --upgrade
 
-#install konlpy mecab
+#install konlpy 
 RUN pip install konlpy  
-RUN curl -fSsL -O https://raw.githubusercontent.com/konlpy/konlpy/master/scripts/mecab.sh && \
-    chmod +x mecab.sh && \
-    ./mecab.sh
